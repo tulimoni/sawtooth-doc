@@ -6,7 +6,7 @@ docker build -f Dockerfile.client -t sawtooth-client-intkey:chime .
 docker compose -f sawtooth-default-poet.yaml up -d --force-recreate --scale sawtooth-client=100
 ```
 3) You can see the number of client using this command
-   ```bash
+```bash
  docker compose -f sawtooth-default-poet.yaml ps | grep sawtooth-client | wc -l
  ```
 or
